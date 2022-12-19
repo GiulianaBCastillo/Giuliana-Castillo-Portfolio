@@ -32,6 +32,7 @@
       li a:hover {
         background-color: rgba(219, 135, 135, 0.779);
       }
+
 .grid-container {
 display: grid;
 grid-template-areas: 'left center right';
@@ -45,20 +46,17 @@ background-color: whitesmoke;
 .grid-left {
     grid-area: left;
     background-image: url("../Unit-2-Challenge-Portfolio/Images/writer.jpeg") ;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .grid-center {
     grid-area: center;
     background-image: url("../Unit-2-Challenge-Portfolio/Images/beach.jpg");
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .grid-right {
     grid-area: right;
-    background-image: url("../Unit-2-Challenge-Portfolio/Images/Burger.jpeg")
+    background-image: url("../Unit-2-Challenge-Portfolio/Images/Burger.jpeg");
   }
+
   .grid-container div {
     background-color: black;
   }
