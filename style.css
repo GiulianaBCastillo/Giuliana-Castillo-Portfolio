@@ -1,3 +1,15 @@
+#navBar {
+    display:flex;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navBar >h1 {
+    display: block;
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+}
 #ul {
         list-style-type: none;
         margin: 0;
@@ -18,33 +30,40 @@
       }
       /* Change the link color to #111 (black) on hover */
       li a:hover {
-        background-color: #111;
+        background-color: rgba(219, 135, 135, 0.779);
       }
+.grid-container {
+display: grid;
+grid-template-areas: 'left center right';
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 500px;
+grid-gap: 10px;
+width: 1500px;
+background-color: whitesmoke;
+}
+
+.grid-left {
+    grid-area: left;
+    background-image: url("../Unit-2-Challenge-Portfolio/Images/writer.jpeg") ;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .grid-center {
+    grid-area: center;
+    background-image: url("../Unit-2-Challenge-Portfolio/Images/beach.jpg");
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .grid-right {
+    grid-area: right;
+    background-image: url("../Unit-2-Challenge-Portfolio/Images/Burger.jpeg")
+  }
+  .grid-container div {
+    background-color: black;
+  }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    background-color: blanchedalmond;
   }
-  .item1 { grid-area: header; }
-  .item2 { grid-area: menu; }
-  .item3 { grid-area: main; }
-  .item4 { grid-area: right; }
-  .item5 { grid-area: footer; }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-  /* Grid CSS */
+
