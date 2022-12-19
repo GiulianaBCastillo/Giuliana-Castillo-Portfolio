@@ -44,8 +44,8 @@ background-color: whitesmoke;
 }
 
 .grid-left {
-    grid-area: left;
-    background-image: url("../Unit-2-Challenge-Portfolio/Images/writer.jpeg") ;
+    grid-area: left; 
+    background-image: url("../Unit-2-Challenge-Portfolio/Images/writer.jpeg");
   }
   .grid-center {
     grid-area: center;
